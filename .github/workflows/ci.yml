@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Add local tool directories to PATH
+        run: |
+          echo "$HOME/.dprint/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$(go env GOPATH)/bin" >> "$GITHUB_PATH"
+
+      - name: Install dprint
+        run: make install-dprint
+
+      - name: Install golangci-lint
+        run: make install-golangci-lint
+
+      - name: Run tests
+        run: go test ./...
+
+      - name: Run lint
+        run: make lint
+
+      - name: Run formatter
+        run: make fmt
+
+      - name: Verify formatting produced no changes
+        run: git diff --exit-code

@@ -1,0 +1,18 @@
+{
+  "name": "code-strength-ai",
+  "version": "0.1.0",
+  "description": "Helps AI agents apply repository directory-specific development and production requirement levels.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Code Strength AI",
+    "shortDescription": "Apply directory-specific AI requirement levels.",
+    "longDescription": "Uses the repository's code-strength CLI and YAML definition to identify development and production requirement levels before implementation.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Use $code-strength-ai to determine the requirement level before changing code."
+  }
+}

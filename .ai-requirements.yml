@@ -1,0 +1,30 @@
+directories:
+  - path: .
+    level: development
+  - path: .github
+    level: development
+  - path: .github/workflows
+    level: development
+  - path: cmd
+    level: production
+  - path: cmd/code-strength
+    level: production
+  - path: docs
+    level: development
+  - path: internal
+    level: production
+  - path: internal/generator
+    level: production
+  - path: internal/scanner
+    level: production
+  - path: internal/selector
+    level: production
+exclude:
+  - .git
+  - .idea
+  - .vscode
+  - build
+  - dist
+  - node_modules
+  - tmp
+  - vendor

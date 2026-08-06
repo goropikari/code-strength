@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Strength AI"
+  short_description: "Apply directory-specific AI requirement levels."
+  default_prompt: "Use $code-strength-ai to determine the requirement level before changing code."
+
+policy:
+  allow_implicit_invocation: true
