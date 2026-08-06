@@ -97,7 +97,10 @@ func render(out *os.File, query string, visible []string, selected map[string]bo
 	writeTerminalLine(out, "Select production directories (up/down move, Space toggle, Enter confirm)")
 	writeTerminalLine(out, "")
 
-	for i, path := range visible {
+	start, end := viewport(len(visible), cursor, terminalHeight(out))
+	for i := start; i < end; i++ {
+		path := visible[i]
+
 		pointer := " "
 		if i == cursor {
 			pointer = ">"
@@ -106,8 +109,53 @@ func render(out *os.File, query string, visible []string, selected map[string]bo
 		writeTerminalLine(out, fmt.Sprintf("%s [%s] %s", pointer, mark(selected[path]), path))
 	}
 
+	if len(visible) > end-start {
+		writeTerminalLine(out, fmt.Sprintf("Showing %d-%d of %d directories", start+1, end, len(visible)))
+	}
+
 	writeTerminalPrompt(out, fmt.Sprintf("Search: %s", query))
 	_, _ = fmt.Fprint(out, "\x1b[J")
+}
+
+func terminalHeight(out *os.File) int {
+	_, height, err := term.GetSize(int(out.Fd()))
+	if err != nil || height < 1 {
+		return 24
+	}
+
+	return height
+}
+
+func viewport(total, cursor, height int) (int, int) {
+	if total == 0 {
+		return 0, 0
+	}
+
+	// Reserve two header lines, a status line, and the search prompt.
+	rows := max(height-4, 1)
+
+	rows = min(rows, total)
+
+	if cursor < 0 {
+		cursor = 0
+	}
+
+	if cursor >= total {
+		cursor = total - 1
+	}
+
+	start := 0
+	if cursor >= rows {
+		start = cursor - rows + 1
+	}
+
+	end := start + rows
+	if end > total {
+		end = total
+		start = end - rows
+	}
+
+	return start, end
 }
 
 func writeTerminalLine(out *os.File, line string) {

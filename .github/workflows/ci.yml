@@ -37,6 +37,12 @@ jobs:
       - name: Install golangci-lint
         run: make install-golangci-lint
 
+      - name: Install gitleaks
+        run: make install-gitleaks
+
+      - name: Install typos
+        run: make install-typos
+
       - name: Run tests
         run: go test ./...
 

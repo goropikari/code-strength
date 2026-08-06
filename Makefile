@@ -1,4 +1,4 @@
-.PHONY: all fmt fix lint install install-codex install-dprint install-gitleaks install-typos install-dev-tools
+.PHONY: all fmt fix lint install install-codex install-dprint install-golangci-lint install-gitleaks install-typos install-dev-tools
 
 LOCAL_BIN ?= $(HOME)/.local/bin
 
@@ -35,6 +35,9 @@ install-dprint:
 		curl -fsSL https://dprint.dev/install.sh | sh; \
 	fi
 	dprint --version
+
+install-golangci-lint:
+	go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@v2.12.2
 
 install-gitleaks:
 	@set -eu; \
