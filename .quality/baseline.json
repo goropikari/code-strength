@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "baseline_version": "1.0.0",
+  "repository": {
+    "root": "."
+  },
+  "repository_tools": [],
+  "analysis_skills": [
+    {
+      "name": "requirements-review",
+      "applied": true,
+      "evidence": "docs/prd.md defines observable CLI, directory selection, YAML, and AI-consumer requirements; unresolved PRD items are recorded as assumptions rather than blocking rules."
+    },
+    {
+      "name": "architecture-review",
+      "applied": true,
+      "evidence": "cmd/ owns Cobra orchestration; internal/scanner, internal/selector, and internal/generator own discovery, selection, and definition I/O respectively. No cross-layer cycle was found in the inspected Go packages."
+    },
+    {
+      "name": "change-impact-review",
+      "applied": true,
+      "evidence": "Inspected cmd entry points, README examples, docs/prd.md, .ai-requirements.yml, CI, Makefile, and package tests. CLI output and YAML shape are the primary consumer contracts; no database, queue, or external service boundary exists."
+    },
+    {
+      "name": "security-review",
+      "applied": true,
+      "evidence": "Reviewed path resolution in cmd/level.go and cmd/generate.go, directory walking in internal/scanner, YAML parsing/writing in internal/generator, and secret scanning policy. No confirmed critical defect; path containment and output-file behavior remain regression-sensitive."
+    },
+    {
+      "name": "whitebox-risk-based-test",
+      "applied": true,
+      "evidence": "Inspected scanner symlink traversal/visited state, generator nearest-parent and exclusion branches, selector terminal/fallback state transitions, and existing package tests. Required regression focus is CLI contract, path boundaries, selection cancellation, and viewport bounds."
+    },
+    {
+      "name": "api-compatibility-review",
+      "applied": true,
+      "evidence": "The Cobra CLI commands and generated .ai-requirements.yml schema are public repository contracts; README, PRD, and command implementations were compared."
+    },
+    {
+      "name": "test-quality-review",
+      "applied": true,
+      "evidence": "TESTING.md and AGENTS.md define testify, AAA, t.Run, deterministic tests, and race testing. Existing tests cover core packages but several pre-existing tests do not yet follow every stated convention."
+    },
+    {
+      "name": "goreadable",
+      "applied": true,
+      "evidence": "goreadable --format text ./... identified function handleKey in internal/selector/selector.go as exceeding default complexity and argument thresholds; candidates are review signals, not automatic failures."
+    }
+  ],
+  "mechanical_checks": [
+    {
+      "id": "go-test",
+      "command": "go test ./...",
+      "required": true,
+      "when": "Go module"
+    },
+    {
+      "id": "go-vet",
+      "command": "go vet ./...",
+      "required": true,
+      "when": "Go module"
+    },
+    {
+      "id": "go-race",
+      "command": "go test -race ./...",
+      "required": true,
+      "when": "Go module; required by TESTING.md"
+    },
+    {
+      "id": "golangci-lint",
+      "command": "golangci-lint run ./...",
+      "required": true,
+      "when": "Go module and golangci-lint is installed"
+    },
+    {
+      "id": "gitleaks",
+      "command": "gitleaks detect --no-banner --redact --source .",
+      "required": true,
+      "when": "Repository secret scan"
+    },
+    {
+      "id": "typos",
+      "command": "typos",
+      "required": true,
+      "when": "Repository spelling scan"
+    },
+    {
+      "id": "go-format",
+      "command": "golangci-lint fmt --diff",
+      "required": true,
+      "when": "Go source formatting"
+    },
+    {
+      "id": "dprint-format",
+      "command": "dprint check --incremental=false",
+      "required": true,
+      "when": "Markdown, YAML, JSON, and other configured files"
+    },
+    {
+      "id": "goaaa",
+      "command": "goaaa ./...",
+      "required": true,
+      "when": "Go tests; enforce Arrange-Act-Assert marker order"
+    },
+    {
+      "id": "gomut",
+      "command": "gomut test ./... --progress off --timeout 10s",
+      "required": true,
+      "when": "Go mutation testing; review lived and not-covered mutations"
+    },
+    {
+      "id": "goreadable",
+      "command": "goreadable --format text ./...",
+      "required": true,
+      "when": "Go readability triage; candidates require semantic review and are not automatic failures"
+    },
+    {
+      "id": "gormalias",
+      "command": "gormalias ./...",
+      "required": true,
+      "when": "Go type-alias cleanup dry-run"
+    },
+    {
+      "id": "gostructfmt",
+      "command": "gostructfmt --diff",
+      "required": true,
+      "when": "Go populated struct literal formatting"
+    }
+  ],
+  "must_quality": [
+    {
+      "id": "requirements",
+      "rule": "Requested behavior is satisfied and demonstrated by tests or evidence",
+      "severity": "critical"
+    },
+    {
+      "id": "regression",
+      "rule": "Existing supported behavior is not unintentionally broken",
+      "severity": "critical"
+    },
+    {
+      "id": "mutation-evidence",
+      "rule": "Mutation testing is run for Go changes and lived or not-covered mutations receive an explicit review decision",
+      "severity": "major"
+    },
+    {
+      "id": "repository-conventions",
+      "rule": "Repository-local guidance, including TESTING.md/AGENTS.md test conventions and CI-required checks, and public contracts are respected",
+      "severity": "major"
+    },
+    {
+      "id": "security",
+      "rule": "No critical security defect is introduced",
+      "severity": "critical"
+    }
+  ],
+  "performance_quality": [
+    {
+      "id": "simplicity",
+      "rule": "Prefer the smallest understandable change",
+      "severity": "non_blocking"
+    },
+    {
+      "id": "maintainability",
+      "rule": "Keep responsibilities, names, and tests easy to evolve",
+      "severity": "non_blocking"
+    }
+  ],
+  "critical_defects": [
+    "Security compromise or secret exposure",
+    "Data loss, corruption, or unsafe migration",
+    "Required behavior missing or public API broken without approval"
+  ],
+  "assumptions": [
+    "The baseline targets the current main branch at HEAD 393c3a3; future changes must update it when tooling, contracts, or quality expectations materially change.",
+    "The PRD still lists unresolved product choices; this baseline treats the implemented Cobra commands and .ai-requirements.yml format documented in README.md as the current observable contract.",
+    "No repository-specific inspection tool is required because the current build, tests, linters, secret scanner, typo scanner, and formatter provide deterministic checks for the established rules.",
+    "goaaa, gomut, goreadable, gormalias, and gostructfmt are installed repository quality tools; their versions are managed outside this repository and must remain available to run the baseline.",
+    "The initial gomut run completed with exit code 0 but reported 16 lived and 78 not-covered mutations; this is evidence for test review, not a claim of complete mutation protection.",
+    "golangci-lint run ./... exited 5 with 'no go files to analyze' in this environment despite a valid Go module; this is an environment/tooling issue and is not recorded as a pass.",
+    "dprint check exited 1 because its incremental cache under /home/ubuntu/.cache/dprint is read-only; formatting status is therefore unverified in this environment."
+  ]
+}

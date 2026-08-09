@@ -5,6 +5,8 @@ directories:
     level: development
   - path: .github/workflows
     level: development
+  - path: .quality
+    level: development
   - path: cmd
     level: production
   - path: cmd/code-strength
@@ -19,6 +21,18 @@ directories:
     level: production
   - path: internal/selector
     level: production
+  - path: plugins
+    level: development
+  - path: plugins/code-strength-ai
+    level: development
+  - path: plugins/code-strength-ai/.codex-plugin
+    level: development
+  - path: plugins/code-strength-ai/skills
+    level: development
+  - path: plugins/code-strength-ai/skills/code-strength-ai
+    level: development
+  - path: plugins/code-strength-ai/skills/code-strength-ai/agents
+    level: development
 exclude:
   - .git
   - .idea
