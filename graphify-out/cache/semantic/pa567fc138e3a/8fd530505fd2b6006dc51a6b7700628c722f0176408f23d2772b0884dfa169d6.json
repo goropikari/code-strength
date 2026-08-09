@@ -1,1 +1,137 @@
-{"nodes": [{"id": "docs_prd_ai_requirement_level_guide", "label": "Directory-specific AI requirement level guide", "file_type": "document", "source_file": "docs/prd.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "docs_prd_development_level", "label": "development requirement level", "file_type": "concept", "source_file": "docs/prd.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "docs_prd_production_level", "label": "production requirement level", "file_type": "concept", "source_file": "docs/prd.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "docs_prd_cobra_cli", "label": "Go/Cobra CLI", "file_type": "concept", "source_file": "docs/prd.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "docs_prd_recursive_dependency_traversal", "label": "Recursive dependency traversal from AI starting points", "file_type": "rationale", "source_file": "docs/prd.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [{"source": "docs_prd_ai_requirement_level_guide", "target": "docs_prd_development_level", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}, {"source": "docs_prd_ai_requirement_level_guide", "target": "docs_prd_production_level", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}, {"source": "docs_prd_ai_requirement_level_guide", "target": "docs_prd_cobra_cli", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}, {"source": "docs_prd_ai_requirement_level_guide", "target": "docs_prd_recursive_dependency_traversal", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}, {"source": "docs_prd_development_level", "target": "plugins_code_strength_ai_skills_code_strength_ai_skill_production_practices", "relation": "semantically_similar_to", "confidence": "INFERRED", "confidence_score": 0.65, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}, {"source": "docs_prd_production_level", "target": "plugins_code_strength_ai_skills_code_strength_ai_skill_production_practices", "relation": "conceptually_related_to", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "docs/prd.md", "source_location": null, "weight": 1.0}], "hyperedges": [{"id": "ai_requirement_level_workflow", "label": "AI requirement level workflow", "nodes": ["ai_requirements_directory_levels", "readme_code_strength_cli", "plugins_code_strength_ai_skills_code_strength_ai_skill_code_strength_ai_skill", "docs_prd_ai_requirement_level_guide"], "relation": "participate_in", "confidence": "INFERRED", "confidence_score": 0.95, "source_file": "docs/prd.md"}]}
+{
+  "nodes": [
+    {
+      "id": "docs_prd_ai_requirement_level_guide",
+      "label": "Directory-specific AI requirement level guide",
+      "file_type": "document",
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_prd_development_level",
+      "label": "development requirement level",
+      "file_type": "concept",
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_prd_production_level",
+      "label": "production requirement level",
+      "file_type": "concept",
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_prd_cobra_cli",
+      "label": "Go/Cobra CLI",
+      "file_type": "concept",
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "docs_prd_recursive_dependency_traversal",
+      "label": "Recursive dependency traversal from AI starting points",
+      "file_type": "rationale",
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "docs_prd_ai_requirement_level_guide",
+      "target": "docs_prd_development_level",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_prd_ai_requirement_level_guide",
+      "target": "docs_prd_production_level",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_prd_ai_requirement_level_guide",
+      "target": "docs_prd_cobra_cli",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_prd_ai_requirement_level_guide",
+      "target": "docs_prd_recursive_dependency_traversal",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_prd_development_level",
+      "target": "plugins_code_strength_ai_skills_code_strength_ai_skill_production_practices",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "docs_prd_production_level",
+      "target": "plugins_code_strength_ai_skills_code_strength_ai_skill_production_practices",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/prd.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ai_requirement_level_workflow",
+      "label": "AI requirement level workflow",
+      "nodes": [
+        "ai_requirements_directory_levels",
+        "readme_code_strength_cli",
+        "plugins_code_strength_ai_skills_code_strength_ai_skill_code_strength_ai_skill",
+        "docs_prd_ai_requirement_level_guide"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "docs/prd.md"
+    }
+  ]
+}

@@ -1,1 +1,365 @@
-{"nodes": [{"id": "$graphify-root$_cmd_generate_go", "label": "generate.go", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L1"}, {"id": "cmd_stringflags", "label": "stringFlags", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L13"}, {"id": "cmd_stringflags_string", "label": ".String()", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L15"}, {"id": "cmd_stringflags_set", "label": ".Set()", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L16"}, {"id": "cmd_stringflags_type", "label": ".Type()", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L20"}, {"id": "$graphify-root$_cmd_generate_newgeneratecommand", "label": "newGenerateCommand()", "file_type": "code", "source_file": "cmd/generate.go", "source_location": "L22"}, {"id": "command", "label": "Command", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/cmd/generate.go"}], "edges": [{"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_fmt", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L4", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_path_filepath", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L5", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_generator", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_scanner", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_selector", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L9", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "go_pkg_github_com_spf13_cobra", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L10", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_generate_go", "target": "cmd_stringflags", "relation": "contains", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L13", "weight": 1.0}, {"source": "cmd_stringflags", "target": "cmd_stringflags_string", "relation": "method", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L15", "weight": 1.0}, {"source": "cmd_stringflags", "target": "cmd_stringflags_set", "relation": "method", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L16", "weight": 1.0}, {"source": "cmd_stringflags", "target": "cmd_stringflags_type", "relation": "method", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L20", "weight": 1.0}, {"source": "$graphify-root$_cmd_generate_go", "target": "$graphify-root$_cmd_generate_newgeneratecommand", "relation": "contains", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L22", "weight": 1.0}, {"source": "$graphify-root$_cmd_generate_newgeneratecommand", "target": "command", "relation": "references", "confidence": "EXTRACTED", "source_file": "cmd/generate.go", "source_location": "L22", "weight": 1.0, "context": "return_type"}], "raw_calls": [{"caller_nid": "cmd_stringflags_string", "callee": "Sprint", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L15"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Abs", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L41"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "List", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L46"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Select", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "InOrStdin", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "BuildEntries", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L59"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "IsAbs", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L62"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Join", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L63"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Write", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L66"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Fprintf", "is_member_call": false, "language": "go", "source_file": "cmd/generate.go", "source_location": "L70"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L70"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "StringVarP", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L75"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L75"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "StringVarP", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L76"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L76"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Var", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L77"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L77"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Var", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L78"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L78"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "BoolVar", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L79"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L79"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Changed", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L81"}, {"caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/generate.go", "source_location": "L81"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_cmd_generate_go",
+      "label": "generate.go",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "cmd_stringflags",
+      "label": "stringFlags",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L13"
+    },
+    {
+      "id": "cmd_stringflags_string",
+      "label": ".String()",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L15"
+    },
+    {
+      "id": "cmd_stringflags_set",
+      "label": ".Set()",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L16"
+    },
+    {
+      "id": "cmd_stringflags_type",
+      "label": ".Type()",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L20"
+    },
+    {
+      "id": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "label": "newGenerateCommand()",
+      "file_type": "code",
+      "source_file": "cmd/generate.go",
+      "source_location": "L22"
+    },
+    {
+      "id": "command",
+      "label": "Command",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/cmd/generate.go"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_fmt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_path_filepath",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_scanner",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_selector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "go_pkg_github_com_spf13_cobra",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "cmd_stringflags",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "cmd_stringflags",
+      "target": "cmd_stringflags_string",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "cmd_stringflags",
+      "target": "cmd_stringflags_set",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "cmd_stringflags",
+      "target": "cmd_stringflags_type",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_go",
+      "target": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "target": "command",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/generate.go",
+      "source_location": "L22",
+      "weight": 1.0,
+      "context": "return_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "cmd_stringflags_string",
+      "callee": "Sprint",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Abs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "List",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Select",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "InOrStdin",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "BuildEntries",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "IsAbs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L62"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Join",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Write",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Fprintf",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L70"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "StringVarP",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "StringVarP",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Var",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Var",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L78"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "BoolVar",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L79"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Changed",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_generate_newgeneratecommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/generate.go",
+      "source_location": "L81"
+    }
+  ]
+}

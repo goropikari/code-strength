@@ -1,1 +1,299 @@
-{"nodes": [{"id": "$graphify-root$_cmd_level_go", "label": "level.go", "file_type": "code", "source_file": "cmd/level.go", "source_location": "L1"}, {"id": "$graphify-root$_cmd_level_newlevelcommand", "label": "newLevelCommand()", "file_type": "code", "source_file": "cmd/level.go", "source_location": "L13"}, {"id": "command", "label": "Command", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/cmd/level.go"}], "edges": [{"source": "$graphify-root$_cmd_level_go", "target": "go_pkg_fmt", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L4", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_level_go", "target": "go_pkg_os", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L5", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_level_go", "target": "go_pkg_path_filepath", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L6", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_level_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_generator", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_level_go", "target": "go_pkg_github_com_spf13_cobra", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L9", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_cmd_level_go", "target": "$graphify-root$_cmd_level_newlevelcommand", "relation": "contains", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L13", "weight": 1.0}, {"source": "$graphify-root$_cmd_level_newlevelcommand", "target": "command", "relation": "references", "confidence": "EXTRACTED", "source_file": "cmd/level.go", "source_location": "L13", "weight": 1.0, "context": "return_type"}], "raw_calls": [{"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "ExactArgs", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L28"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Abs", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L30"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "IsAbs", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L36"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Join", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L37"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Read", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L40"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "IsAbs", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L46"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Join", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L47"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Clean", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L50"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Stat", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L52"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Fprintln", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Rel", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L58"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "string", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L63"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Fprintln", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L64"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L64"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L69"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "ToSlash", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L69"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Fprintln", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L71"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L71"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Fprintln", "is_member_call": false, "language": "go", "source_file": "cmd/level.go", "source_location": "L76"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "OutOrStdout", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L76"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "StringVarP", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L81"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L81"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "StringVarP", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L82"}, {"caller_nid": "$graphify-root$_cmd_level_newlevelcommand", "callee": "Flags", "is_member_call": true, "language": "go", "source_file": "cmd/level.go", "source_location": "L82"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_cmd_level_go",
+      "label": "level.go",
+      "file_type": "code",
+      "source_file": "cmd/level.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_cmd_level_newlevelcommand",
+      "label": "newLevelCommand()",
+      "file_type": "code",
+      "source_file": "cmd/level.go",
+      "source_location": "L13"
+    },
+    {
+      "id": "command",
+      "label": "Command",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/cmd/level.go"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "go_pkg_fmt",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "go_pkg_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "go_pkg_path_filepath",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "go_pkg_github_com_spf13_cobra",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_cmd_level_go",
+      "target": "$graphify-root$_cmd_level_newlevelcommand",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_cmd_level_newlevelcommand",
+      "target": "command",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "cmd/level.go",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "return_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "ExactArgs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Abs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "IsAbs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L36"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Join",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Read",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "IsAbs",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Join",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Clean",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Stat",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Fprintln",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Rel",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L58"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "string",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L63"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Fprintln",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L64"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "ToSlash",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L69"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Fprintln",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L71"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Fprintln",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "OutOrStdout",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "StringVarP",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L81"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "StringVarP",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L82"
+    },
+    {
+      "caller_nid": "$graphify-root$_cmd_level_newlevelcommand",
+      "callee": "Flags",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "cmd/level.go",
+      "source_location": "L82"
+    }
+  ]
+}

@@ -1,1 +1,118 @@
-{"nodes": [{"id": "testing_testing_guidelines", "label": "Testing Guidelines", "file_type": "rationale", "source_file": "TESTING.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "testing_testify", "label": "testify assertions", "file_type": "concept", "source_file": "TESTING.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "testing_aaa_pattern", "label": "Arrange-Act-Assert pattern", "file_type": "rationale", "source_file": "TESTING.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "testing_t_run", "label": "t.Run subtests", "file_type": "code", "source_file": "TESTING.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "testing_race_detection", "label": "go test -race ./...", "file_type": "code", "source_file": "TESTING.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [{"source": "testing_testing_guidelines", "target": "testing_testify", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "TESTING.md", "source_location": null, "weight": 1.0}, {"source": "testing_testing_guidelines", "target": "testing_aaa_pattern", "relation": "conceptually_related_to", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "TESTING.md", "source_location": null, "weight": 1.0}, {"source": "testing_testing_guidelines", "target": "testing_t_run", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "TESTING.md", "source_location": null, "weight": 1.0}, {"source": "testing_testing_guidelines", "target": "testing_race_detection", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "TESTING.md", "source_location": null, "weight": 1.0}], "hyperedges": [{"id": "testing_quality_principles", "label": "Testing quality principles", "nodes": ["agents_testing_conventions", "testing_testing_guidelines", "testing_testify", "testing_aaa_pattern", "testing_race_detection"], "relation": "form", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "TESTING.md"}]}
+{
+  "nodes": [
+    {
+      "id": "testing_testing_guidelines",
+      "label": "Testing Guidelines",
+      "file_type": "rationale",
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "testing_testify",
+      "label": "testify assertions",
+      "file_type": "concept",
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "testing_aaa_pattern",
+      "label": "Arrange-Act-Assert pattern",
+      "file_type": "rationale",
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "testing_t_run",
+      "label": "t.Run subtests",
+      "file_type": "code",
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "testing_race_detection",
+      "label": "go test -race ./...",
+      "file_type": "code",
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "testing_testing_guidelines",
+      "target": "testing_testify",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "testing_testing_guidelines",
+      "target": "testing_aaa_pattern",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "testing_testing_guidelines",
+      "target": "testing_t_run",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "testing_testing_guidelines",
+      "target": "testing_race_detection",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TESTING.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "testing_quality_principles",
+      "label": "Testing quality principles",
+      "nodes": [
+        "agents_testing_conventions",
+        "testing_testing_guidelines",
+        "testing_testify",
+        "testing_aaa_pattern",
+        "testing_race_detection"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "TESTING.md"
+    }
+  ]
+}

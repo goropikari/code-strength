@@ -1,1 +1,17 @@
-{"nodes": [{"id": "golangci_linters_configuration", "label": "golangci-lint configuration", "file_type": "code", "source_file": ".golangci.yml", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}
+{
+  "nodes": [
+    {
+      "id": "golangci_linters_configuration",
+      "label": "golangci-lint configuration",
+      "file_type": "code",
+      "source_file": ".golangci.yml",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [],
+  "hyperedges": []
+}

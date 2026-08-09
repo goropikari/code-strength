@@ -1,1 +1,91 @@
-{"nodes": [{"id": "agents_testing_conventions", "label": "Repository testing conventions", "file_type": "rationale", "source_file": "AGENTS.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "agents_go_test", "label": "go test ./...", "file_type": "code", "source_file": "AGENTS.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "agents_make_fmt", "label": "make fmt", "file_type": "code", "source_file": "AGENTS.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}, {"id": "agents_make_lint", "label": "make lint", "file_type": "code", "source_file": "AGENTS.md", "source_location": null, "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [{"source": "agents_testing_conventions", "target": "testing_testing_guidelines", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "AGENTS.md", "source_location": null, "weight": 1.0}, {"source": "agents_testing_conventions", "target": "agents_go_test", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "AGENTS.md", "source_location": null, "weight": 1.0}, {"source": "agents_testing_conventions", "target": "agents_make_fmt", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "AGENTS.md", "source_location": null, "weight": 1.0}, {"source": "agents_testing_conventions", "target": "agents_make_lint", "relation": "references", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "AGENTS.md", "source_location": null, "weight": 1.0}], "hyperedges": []}
+{
+  "nodes": [
+    {
+      "id": "agents_testing_conventions",
+      "label": "Repository testing conventions",
+      "file_type": "rationale",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_go_test",
+      "label": "go test ./...",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_make_fmt",
+      "label": "make fmt",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "agents_make_lint",
+      "label": "make lint",
+      "file_type": "code",
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "agents_testing_conventions",
+      "target": "testing_testing_guidelines",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_testing_conventions",
+      "target": "agents_go_test",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_testing_conventions",
+      "target": "agents_make_fmt",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "agents_testing_conventions",
+      "target": "agents_make_lint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": []
+}

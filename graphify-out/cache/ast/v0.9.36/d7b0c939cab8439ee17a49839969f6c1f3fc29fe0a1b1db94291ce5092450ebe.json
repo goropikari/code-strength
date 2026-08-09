@@ -1,1 +1,189 @@
-{"nodes": [{"id": "$graphify-root$_internal_selector_selector_interactive_test_go", "label": "selector_interactive_test.go", "file_type": "code", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L1"}, {"id": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "label": "TestShouldSelectInteractive()", "file_type": "code", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L10"}, {"id": "t", "label": "T", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/internal/selector/selector_interactive_test.go"}], "edges": [{"source": "$graphify-root$_internal_selector_selector_interactive_test_go", "target": "go_pkg_testing", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L5", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_interactive_test_go", "target": "go_pkg_github_com_stretchr_testify_assert", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_interactive_test_go", "target": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L10", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L10", "weight": 1.0, "context": "parameter_type"}], "raw_calls": [{"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L11"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "shouldSelectInteractive", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L15"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L18"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L21"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "shouldSelectInteractive", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L25"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L28"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L31"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "shouldSelectInteractive", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L35"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L38"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L41"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "shouldSelectInteractive", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L45"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L48"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L51"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "shouldSelectInteractive", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L55"}, {"caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_interactive_test.go", "source_location": "L58"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_internal_selector_selector_interactive_test_go",
+      "label": "selector_interactive_test.go",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "label": "TestShouldSelectInteractive()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L10"
+    },
+    {
+      "id": "t",
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/internal/selector/selector_interactive_test.go"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_internal_selector_selector_interactive_test_go",
+      "target": "go_pkg_testing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_interactive_test_go",
+      "target": "go_pkg_github_com_stretchr_testify_assert",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_interactive_test_go",
+      "target": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L11"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "shouldSelectInteractive",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L18"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "shouldSelectInteractive",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L25"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L28"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "shouldSelectInteractive",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L38"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "shouldSelectInteractive",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "shouldSelectInteractive",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_interactive_test_testshouldselectinteractive",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_interactive_test.go",
+      "source_location": "L58"
+    }
+  ]
+}

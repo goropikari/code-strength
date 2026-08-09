@@ -1,1 +1,393 @@
-{"nodes": [{"id": "$graphify-root$_internal_generator_level_test_go", "label": "level_test.go", "file_type": "code", "source_file": "internal/generator/level_test.go", "source_location": "L1"}, {"id": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "label": "TestLevelForPathUsesNearestParent()", "file_type": "code", "source_file": "internal/generator/level_test.go", "source_location": "L10"}, {"id": "t", "label": "T", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/internal/generator/level_test.go"}, {"id": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "label": "TestLevelForPathReturnsUnknownForExcludedPath()", "file_type": "code", "source_file": "internal/generator/level_test.go", "source_location": "L98"}], "edges": [{"source": "$graphify-root$_internal_generator_level_test_go", "target": "go_pkg_testing", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L4", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_generator_level_test_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_generator", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L6", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_generator_level_test_go", "target": "go_pkg_github_com_stretchr_testify_assert", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_generator_level_test_go", "target": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L10", "weight": 1.0}, {"source": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L10", "weight": 1.0, "context": "parameter_type"}, {"source": "$graphify-root$_internal_generator_level_test_go", "target": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L98", "weight": 1.0}, {"source": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/generator/level_test.go", "source_location": "L98", "weight": 1.0, "context": "parameter_type"}], "raw_calls": [{"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L26"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L30"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L33"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L34"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L37"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L41"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L44"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L45"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L48"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L52"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L55"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L56"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L59"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L73"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L76"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L77"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L80"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L84"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L93"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent", "callee": "True", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L94"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L107"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L111"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Empty", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L114"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L115"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L118"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L122"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Empty", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L125"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L126"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L129"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L133"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Empty", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L136"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L137"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L140"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "LevelForPath", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L151"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "Empty", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L154"}, {"caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath", "callee": "False", "is_member_call": false, "language": "go", "source_file": "internal/generator/level_test.go", "source_location": "L155"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_internal_generator_level_test_go",
+      "label": "level_test.go",
+      "file_type": "code",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "label": "TestLevelForPathUsesNearestParent()",
+      "file_type": "code",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L10"
+    },
+    {
+      "id": "t",
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/internal/generator/level_test.go"
+    },
+    {
+      "id": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "label": "TestLevelForPathReturnsUnknownForExcludedPath()",
+      "file_type": "code",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L98"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_internal_generator_level_test_go",
+      "target": "go_pkg_testing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_generator",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_go",
+      "target": "go_pkg_github_com_stretchr_testify_assert",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_go",
+      "target": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "parameter_type"
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_go",
+      "target": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L98",
+      "weight": 1.0,
+      "context": "parameter_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L30"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L33"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L34"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L37"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L41"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L55"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L56"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L59"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L73"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L76"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L77"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L80"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L84"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L93"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathusesnearestparent",
+      "callee": "True",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L94"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L107"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L111"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Empty",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L114"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L115"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L118"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L122"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Empty",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L125"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L126"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L129"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L133"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Empty",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L136"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L137"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L140"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "LevelForPath",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L151"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "Empty",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L154"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_generator_level_test_testlevelforpathreturnsunknownforexcludedpath",
+      "callee": "False",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/generator/level_test.go",
+      "source_location": "L155"
+    }
+  ]
+}

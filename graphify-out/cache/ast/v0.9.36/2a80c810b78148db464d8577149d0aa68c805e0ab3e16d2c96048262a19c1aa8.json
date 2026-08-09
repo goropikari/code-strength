@@ -1,1 +1,469 @@
-{"nodes": [{"id": "$graphify-root$_internal_selector_selector_test_go", "label": "selector_test.go", "file_type": "code", "source_file": "internal/selector/selector_test.go", "source_location": "L1"}, {"id": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "label": "TestSelectSearchesAndTogglesMultipleDirectories()", "file_type": "code", "source_file": "internal/selector/selector_test.go", "source_location": "L14"}, {"id": "t", "label": "T", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/internal/selector/selector_test.go"}, {"id": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "label": "TestSelectParentSelectsDescendants()", "file_type": "code", "source_file": "internal/selector/selector_test.go", "source_location": "L25"}, {"id": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "label": "TestSelectUsesLineModeForNonTerminalFiles()", "file_type": "code", "source_file": "internal/selector/selector_test.go", "source_location": "L39"}, {"id": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "label": "TestSelectIgnoresInvalidIndexes()", "file_type": "code", "source_file": "internal/selector/selector_test.go", "source_location": "L65"}], "edges": [{"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_os", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L4", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_path_filepath", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L5", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_strings", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L6", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_testing", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L7", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_github_com_goropikari_code_strength_internal_selector", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L9", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_github_com_stretchr_testify_assert", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L10", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "go_pkg_github_com_stretchr_testify_require", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L11", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L14", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L14", "weight": 1.0, "context": "parameter_type"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L25", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L25", "weight": 1.0, "context": "parameter_type"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L39", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L39", "weight": 1.0, "context": "parameter_type"}, {"source": "$graphify-root$_internal_selector_selector_test_go", "target": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L65", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_test.go", "source_location": "L65", "weight": 1.0, "context": "parameter_type"}], "raw_calls": [{"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "callee": "Select", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L15"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "callee": "NewReader", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L15"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "callee": "Fatal", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L17"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories", "callee": "Fatalf", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L21"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "callee": "NewReader", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L26"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "callee": "Select", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L29"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "callee": "Fatal", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L31"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants", "callee": "Fatalf", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L35"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L40"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Join", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L42"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "TempDir", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L42"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Create", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L43"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L44"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "WriteString", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L45"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L46"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Seek", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L47"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L48"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Create", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L49"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Join", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L49"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "TempDir", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L49"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L50"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Cleanup", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L51"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L52"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Close", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L52"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Close", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L53"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Select", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L57"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L60"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles", "callee": "Empty", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L61"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L66"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "callee": "NewReader", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L68"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "callee": "Select", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L72"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "callee": "NoError", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L75"}, {"caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_test.go", "source_location": "L76"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_internal_selector_selector_test_go",
+      "label": "selector_test.go",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "label": "TestSelectSearchesAndTogglesMultipleDirectories()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L14"
+    },
+    {
+      "id": "t",
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/internal/selector/selector_test.go"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "label": "TestSelectParentSelectsDescendants()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L25"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "label": "TestSelectUsesLineModeForNonTerminalFiles()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L39"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "label": "TestSelectIgnoresInvalidIndexes()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L65"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_os",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L4",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_path_filepath",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_strings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_testing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L7",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_github_com_goropikari_code_strength_internal_selector",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L9",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_github_com_stretchr_testify_assert",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "go_pkg_github_com_stretchr_testify_require",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L14",
+      "weight": 1.0,
+      "context": "parameter_type"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L25",
+      "weight": 1.0,
+      "context": "parameter_type"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L39",
+      "weight": 1.0,
+      "context": "parameter_type"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_go",
+      "target": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L65",
+      "weight": 1.0,
+      "context": "parameter_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "callee": "Select",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "callee": "NewReader",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L15"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "callee": "Fatal",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectsearchesandtogglesmultipledirectories",
+      "callee": "Fatalf",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L21"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "callee": "NewReader",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L26"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "callee": "Select",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L29"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "callee": "Fatal",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L31"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectparentselectsdescendants",
+      "callee": "Fatalf",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L35"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L40"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Join",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "TempDir",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L42"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Create",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L43"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L44"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "WriteString",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L45"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L46"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Seek",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L47"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L48"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Create",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Join",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "TempDir",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L49"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L50"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Cleanup",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L51"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Close",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L52"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Close",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L53"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Select",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L57"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L60"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectuseslinemodefornonterminalfiles",
+      "callee": "Empty",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L61"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L66"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "callee": "NewReader",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L68"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "callee": "Select",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L72"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "callee": "NoError",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L75"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_test_testselectignoresinvalidindexes",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_test.go",
+      "source_location": "L76"
+    }
+  ]
+}

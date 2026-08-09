@@ -1,1 +1,103 @@
-{"nodes": [{"id": "$graphify-root$_internal_selector_selector_internal_test_go", "label": "selector_internal_test.go", "file_type": "code", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L1"}, {"id": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "label": "TestPrintMatches()", "file_type": "code", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L11"}, {"id": "t", "label": "T", "file_type": "code", "source_file": "", "source_location": "", "origin_file": "$graphify-root$/internal/selector/selector_internal_test.go"}], "edges": [{"source": "$graphify-root$_internal_selector_selector_internal_test_go", "target": "go_pkg_strings", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L5", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_internal_test_go", "target": "go_pkg_testing", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L6", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_internal_test_go", "target": "go_pkg_github_com_stretchr_testify_assert", "relation": "imports_from", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L8", "weight": 1.0, "context": "import"}, {"source": "$graphify-root$_internal_selector_selector_internal_test_go", "target": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "relation": "contains", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L11", "weight": 1.0}, {"source": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "target": "t", "relation": "references", "confidence": "EXTRACTED", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L11", "weight": 1.0, "context": "parameter_type"}], "raw_calls": [{"caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "callee": "Run", "is_member_call": true, "language": "go", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L12"}, {"caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "callee": "printMatches", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L17"}, {"caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches", "callee": "Equal", "is_member_call": false, "language": "go", "source_file": "internal/selector/selector_internal_test.go", "source_location": "L20"}]}
+{
+  "nodes": [
+    {
+      "id": "$graphify-root$_internal_selector_selector_internal_test_go",
+      "label": "selector_internal_test.go",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L1"
+    },
+    {
+      "id": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "label": "TestPrintMatches()",
+      "file_type": "code",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L11"
+    },
+    {
+      "id": "t",
+      "label": "T",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "origin_file": "$graphify-root$/internal/selector/selector_internal_test.go"
+    }
+  ],
+  "edges": [
+    {
+      "source": "$graphify-root$_internal_selector_selector_internal_test_go",
+      "target": "go_pkg_strings",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L5",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_internal_test_go",
+      "target": "go_pkg_testing",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_internal_test_go",
+      "target": "go_pkg_github_com_stretchr_testify_assert",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_internal_test_go",
+      "target": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "target": "t",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L11",
+      "weight": 1.0,
+      "context": "parameter_type"
+    }
+  ],
+  "raw_calls": [
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "callee": "Run",
+      "is_member_call": true,
+      "language": "go",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L12"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "callee": "printMatches",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L17"
+    },
+    {
+      "caller_nid": "$graphify-root$_internal_selector_selector_internal_test_testprintmatches",
+      "callee": "Equal",
+      "is_member_call": false,
+      "language": "go",
+      "source_file": "internal/selector/selector_internal_test.go",
+      "source_location": "L20"
+    }
+  ]
+}
