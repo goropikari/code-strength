@@ -37,7 +37,10 @@ func BuildEntries(dirs, production []string) []Directory {
 			}
 		}
 
-		result = append(result, Directory{Path: path, Level: level})
+		result = append(result, Directory{
+			Path:  path,
+			Level: level,
+		})
 	}
 
 	return result
@@ -49,7 +52,10 @@ func Write(path string, dirs []Directory, excludes []string) error {
 	encoder := yaml.NewEncoder(&output)
 	encoder.SetIndent(2)
 
-	err := encoder.Encode(Definition{Directories: dirs, Exclude: excludes})
+	err := encoder.Encode(Definition{
+		Directories: dirs,
+		Exclude:     excludes,
+	})
 	closeErr := encoder.Close()
 
 	if err != nil {

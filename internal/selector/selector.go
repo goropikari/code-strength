@@ -16,11 +16,17 @@ func Select(in io.Reader, out io.Writer, dirs, initial []string) ([]string, erro
 	input, inputIsFile := in.(*os.File)
 	output, outputIsFile := out.(*os.File)
 
-	if inputIsFile && outputIsFile && term.IsTerminal(int(input.Fd())) && term.IsTerminal(int(output.Fd())) {
-		return selectInteractive(input, output, dirs, initial)
+	if inputIsFile && outputIsFile {
+		if shouldSelectInteractive(true, true, term.IsTerminal(int(input.Fd())), term.IsTerminal(int(output.Fd()))) {
+			return selectInteractive(input, output, dirs, initial)
+		}
 	}
 
 	return selectLines(in, out, dirs, initial)
+}
+
+func shouldSelectInteractive(inputIsFile, outputIsFile, inputIsTerminal, outputIsTerminal bool) bool {
+	return inputIsFile && outputIsFile && inputIsTerminal && outputIsTerminal
 }
 
 func selectInteractive(in, out *os.File, dirs, initial []string) ([]string, error) {
